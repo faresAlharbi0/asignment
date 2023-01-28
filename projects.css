@@ -11,6 +11,9 @@
     justify-content: center;
     background-color: #777;
 }
+.images{
+    margin-top: 1rem;
+}
 .projects{
     display: flex;
     flex-direction: column;
