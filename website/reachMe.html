@@ -47,6 +47,51 @@
         </div>
     </nav>
     <div class="container">
+        <form method="POST" action="/process" id='myform' name='myform'>
+            <section>
+              <!-- First name -->
+                <div>
+                  <label for='fname'>First Name (*):</label> 
+                  <input type="text" name="fname" minlength="1" maxlength="100" placeholder="e.g., Moayad" autofocus pattern="[A-Za-z0-9 ]+" >
+                </div>
+              <!-- email -->
+                <div>
+                  <label>Email (*):</label>
+                  <input id='email' type="email" name="email" placeholder="e.g., moayad@gmail.com" size='25' minlength="1" maxlength="100">
+                </div>
+              <!-- Mobile -->
+                <div>
+                  <label>Mobile:</label>
+                  <select name='countrycode'>
+                   <option>+534</option>
+                   <option selected>+966</option>
+                    <option>+1</option>
+                  </select>
+                  <input id='mobile' type="tel" name="mobile" placeholder="507666666" minlength="9" maxlength="9">
+                </div>
+                <!-- How did you hear about? -->
+                <div id='hear'>
+                  <p>How did you hear about us?</p>
+                      <input type="radio" name="aboutus" value='Google'>
+                      <label>Google</label>
+        
+                    <input type="radio" name="aboutus" value='TV'>
+                   <label>TV</label>
+        
+                      <input type="radio" name="aboutus" value='Friend'>
+                      <label>Friend</label>
+                </div>
+            </section>
+        
+        
+            
+                <div>
+                  <p id='msg'></p>
+                  <input type="submit" formnovalidate>
+                  <input type="reset">
+                </div>
+        
+          </form>
         <p>you can contact me here: <a href="mailto:2040846@uj.edu.sa" class="link">2040846@uj.edu.sa</a></p>
         
         <P>or visit me here
